@@ -10,7 +10,7 @@
       <router-link v-bind:to="'/resume/material-dark'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-material-dark.png" />
-          <span>material-dark</span>
+          <span>Type I</span>
         </div>
       </router-link>
     </div>
@@ -18,7 +18,7 @@
       <router-link v-bind:to="'/resume/left-right'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-left-right.png" />
-          <span>left-right</span>
+          <span>Type II</span>
         </div>
       </router-link>
     </div>
@@ -34,7 +34,7 @@
       <router-link v-bind:to="'/resume/side-bar'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-side-bar.png" />
-          <span>side-bar</span>
+          <span>Type III</span>
         </div>
       </router-link>
     </div>
@@ -42,7 +42,7 @@
       <router-link v-bind:to="'/resume/purple'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-purple.png" />
-          <span>purple</span>
+          <span>Type IV</span>
         </div>
       </router-link>
     </div>
@@ -74,7 +74,7 @@
       <router-link v-bind:to="'/resume/cool'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-cool.png" />
-          <span>cool</span>
+          <span>Type V</span>
         </div>
       </router-link>
     </div>
