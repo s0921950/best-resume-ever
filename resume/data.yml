@@ -1,69 +1,101 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
+  first: Yu-Hua
   middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
+  last: Tung
+about: Hi, my name is Adam Tung.
 position: Software Developer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1984
+  location: Taiwan
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
+- company: Foxconn
+  position: Software Developer
+  timeperiod: since November 2016
+  location: Shenzhen, China
+#  description: 
+  list:
+    - Develop and maintain forum of MongoDB based on NodeBB, NodeBB are built up with mobile responsive to work on all devices - phone, tablet, or desktop. Write plugins and debug for forum of MongoDB as a full-stack developer. 
+  website: http://forum.foxera.com/mongodb
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: Advantech
+  position: Software Developer, WebAccess/HMI Division
+  timeperiod: January 2015 - September 2016
+  location: Taipei, Taiwan
+#  description: Fulfillment of extremely important tasks.
+  list:
+    - Develop Advantech WebAccess dashboard viewer and dashboard editor (client-side) and dashboard REST API server (server-side). Build cross platform desktop dashboard editor with web technologies.
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Oplink Communications, Inc.
+  position: Server Engineer
+  timeperiod: May 2014 - November 2014
+  location: Taipei, Taiwan
+  list:
+     - To develop new features according the specification, collaborative work with hardware agent team and handheld device app team.
+
+- company: Beijing HuaDin-Fortis S&T Co., Ltd.
+  position: Software Developer
+  timeperiod: May 2013 - February 2014
+  location: Beijing, China
+  list:
+    - Built online cloud-based English language learning platform(e.g. listening, reading and writing skill) for Cambridge English exam and qualification, including practice, exam, simulation, analysis system.
+
+- company: Foxconn
+  position: Software Developer
+  timeperiod: Octorber 2010 - February 2013
+  location: Shenzhen, China
+#  description: Making coffee and baking cookies.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: Master of Computer Science
+  timeperiod: July 2008 - July 2010
+  description: National Cheng Kung University, Tainan, Taiwan.
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Bachelor of Applied Mathematics
+  timeperiod: September 2003 - September 2007
+  description: National Chayi University, Chayi, Taiwan.
+
 
 # skill level goes 0 to 100
 skills:
 - name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
+#  level: 99
+- name: Vue.js
+#  level: 95
+- name: JavaScript ECMA6
+#  level: 97
 - name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
+#  level: 93
+- name: Angular
+#  level: 60
+- name: Git
+#  level: 80
+- name: Webpack
+#  level: 70
 - name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+#  level: 99
+- name: MongoDB
+#  level: 99
+- name: Shell script
+#  level: 99
+# knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual (English and Klingon).
+
+experience-skill:
+- description: Experience building applications with JavaScript framework Angular.js.
+- description: Basic knowledge of Node.js and common frameworks. (Grunt, Gulp, Bower, Yeoman)
+- description: Experience in working with a code management system (Git, SVN).
+- description: Experience working with relational database MySQL and no-SQL Mongo database.
+- description: Experience using an Integrated Development Environment Eclipse.
+- description: Develop on the backend system that powers home security and engine, app services.
+- description: Experience with Internet of Things.
+- description: Experience with front-end development with HTML5 and hybrid mobile apps with ionicframework/PhoneGap/Cordova.
 
 projects:
 - name: best-resume-ever
   platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  description: Build fast and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
   url: https://github.com/salomonelli/best-resume-ever
 
 hobbies:
@@ -77,16 +109,17 @@ hobbies:
 
 contributions:
 - name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+  description: Build fast and easy multiple beautiful resumes.
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: adam.yh.dong@gmail.com
+  phone: 0910286611
+  phone2: 13076988171 ( I'm here. )
+  street: 
+  city: Taiyuan
+  website: https://yuhuatung.herokuapp.com
+  github: yuhuatung
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `
