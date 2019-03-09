@@ -62,8 +62,8 @@
       <span>;&nbsp;</span>
       <span>{{person.contact.street}}, {{person.contact.city}}</span>
       <span>;&nbsp;</span>
-      <a v-if="person.contact.website" :href="person.contact.website">
-              {{person.contact.website}}</a>
+      <a v-if="person.contact.website" :href="contactLinks.website">
+              {{contactLinks.website}}</a>
       <span v-if="person.contact.website">;&nbsp;</span>
       <a v-if="person.contact.github" :href="contactLinks.github">
                 {{contactLinks.github}}</a>

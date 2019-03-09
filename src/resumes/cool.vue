@@ -64,7 +64,7 @@
             <a
               v-if="person.contact.website"
               class="section-link"
-              :href="person.contact.website">
+              :href="contactLinks.website">
               <i class="section-link__icon fa fa-globe"></i>{{ person.contact.website }}
             </a>
 
