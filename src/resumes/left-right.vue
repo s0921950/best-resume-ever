@@ -6,11 +6,11 @@
   <div class="row text-center">
     <p class="position center">{{person.position}}</p>
   </div>
-  <div class="row">
+  <!-- <div class="row">
     <div class="image center">
       <div class="img"></div>
     </div>
-  </div>
+  </div> -->
   <div class="left half">
     <div class="experience">
       <h3>{{ lang.experience }}</h3>
@@ -33,7 +33,7 @@
           <td><i class="fa fa-phone" aria-hidden="true"></i></td>
         </tr>
         <tr>
-          <td>{{person.contact.street}} <br> {{person.contact.city}}</td>
+          <td><!-- {{person.contact.street}} <br> --> {{person.contact.city}}</td>
           <td><i class="fa fa-home" aria-hidden="true"></i></td>
         </tr>
         <tr v-if="person.contact.website">
@@ -121,7 +121,7 @@ export default Vue.component(name, getVueOptions(name));
     border:1px solid black;
     text-transform:uppercase;
     padding:10px 20px;
-    margin-top:80px;
+    margin-top:40px;
     margin-bottom:5px;
     font-family:'Open Sans', sans-serif;
     font-size:35px;
@@ -133,7 +133,7 @@ export default Vue.component(name, getVueOptions(name));
     font-family:'Open Sans', sans-serif;
     font-size:smaller;
     color:#757575;
-    margin-bottom:40px;
+    margin-bottom:10px;
   }
   .image {
     width:100px;
