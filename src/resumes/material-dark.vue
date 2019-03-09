@@ -52,7 +52,7 @@
       </div>
     </a>
 
-    <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
+    <a v-if="person.contact.github" :href="contactLinks.github" target="_self">
       <div class="item">
         <div class="icon">
           <i class="fa fa-github"></i>
@@ -64,7 +64,7 @@
       </div>
     </a>
 
-    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
+    <a v-if="person.contact.website" :href="contactLinks.website" target="_self">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>

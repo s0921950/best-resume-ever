@@ -118,7 +118,7 @@ contact:
   phone2: 13076988171 ( I'm here. )
   street: 
   city: Taiyuan
-  website: https://yuhuatung.herokuapp.com
+  website: yuhuatung.herokuapp.com
   github: yuhuatung
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
