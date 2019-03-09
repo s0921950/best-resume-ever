@@ -5,10 +5,7 @@
             <h2 id="position">{{person.position}}</h2>
             <h1 id="name">{{person.name.first}} {{person.name.last}}</h1>
             <div id="info-flex">
-                <span id="email"><a :href='"mailto:" + person.contact.email'>
-                  <i class="fa fa-envelope" aria-hidden="true"></i> {{person.contact.email}}</a></span>
-                <span id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> {{person.contact.phone}}</span>
-                <span v-if="person.contact.website" id="website"><a :href='person.contact.website'><i class="fa fa-home" aria-hidden="true"></i> {{person.contact.website}}</a></span>
+                <span v-if="person.contact.website" id="website"><a :href='contactLinks.website'><i class="fa fa-home" aria-hidden="true"></i> {{person.contact.website}}</a></span>
                 <span v-if="person.contact.github" id="github"><a :href='contactLinks.github'><i class="fa fa-github" aria-hidden="true"></i> {{person.contact.github}}</a></span>
             </div>
         </div>
@@ -57,7 +54,17 @@
     <div id="resume-footer">
         <div v-if="person.about">
             <h2>{{ lang.about }}</h2>
-            <p>{{person.about}}</p>
+            <!-- <p>{{person.about}}</p> -->
+        </div>
+        <div id="footer-left">
+            <div id="info-flex">
+                <span id="email"><a :href='"mailto:" + person.contact.email'>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> {{person.contact.email}}</a></span>
+            </div>
+            <div id="info-flex">
+                <span id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> Taiwan: {{person.contact.phone}}</span>
+                <span id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> China: {{person.contact.phone2}}</span>
+            </div>
         </div>
     </div>
 </div>
@@ -104,10 +111,10 @@ export default Vue.component(name, getVueOptions(name));
 
     #resume-header {
         color: white;
-        height: 136px;
+        height: 126px;
         background-color: purple;
         box-shadow: inset 0px 0px 200px #301030;
-        padding: 40px 100px 25px;
+        padding: 10px 100px 10px;
 
         #header-left {
             /*width: 465px;*/
@@ -125,7 +132,7 @@ export default Vue.component(name, getVueOptions(name));
             }
             #info-flex {
                 display:flex;
-                margin-top:20px;
+                margin-top:10px;
                 font-size:14px;
 
                 span {
@@ -156,7 +163,7 @@ export default Vue.component(name, getVueOptions(name));
     }
 
     #resume-body {
-        padding: 40px 100px;
+        padding: 40px 25px;
 
         #experience-title, #education-title, #skills-title {
             font-size:26px;
@@ -164,7 +171,7 @@ export default Vue.component(name, getVueOptions(name));
         }
 
         .experience {
-            margin: 10px 0 10px 50px;
+            margin: 10px 30px 10px 30px;
             ul {
                 margin: 5px 0 0 0;
             }
@@ -193,7 +200,7 @@ export default Vue.component(name, getVueOptions(name));
         }
 
         .education {
-            margin: 10px 0 10px 50px;
+            margin: 10px 30px 10px 30px;
         }
 
         #skill-list {
@@ -209,8 +216,9 @@ export default Vue.component(name, getVueOptions(name));
         }
     }
     #resume-footer {
-        padding: 20px 100px;
-        height: 135px;
+        color:white;
+        padding: 5px 100px;
+        height: 100px;
         background-color: purple;
         box-shadow: inset 0px 0px 100px #301030;
         box-sizing: border-box;
@@ -219,6 +227,20 @@ export default Vue.component(name, getVueOptions(name));
         width: 100%;
         h2, p {
             color:white;
+        }
+        #footer-left {
+            #info-flex {
+                display:flex;
+                margin-top:5px;
+                font-size:14px;
+
+                span {
+                    margin-right:25px;
+                }
+                i {
+                    margin-right:5px;
+                }
+            }
         }
     }
 
