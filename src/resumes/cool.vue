@@ -159,7 +159,7 @@
           </div>
         </div>
 
-        <div
+        <!-- <div
           v-if="person.contributions"
           class="section">
           <div class="section-headline">
@@ -179,7 +179,7 @@
               </span>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
