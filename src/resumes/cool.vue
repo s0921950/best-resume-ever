@@ -47,9 +47,9 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
+            <!-- <div class="section-link">
               <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
+            </div> -->
 
             <a
               class="section-link"
@@ -59,6 +59,10 @@
 
             <div class="section-link">
               <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+            </div>
+
+            <div class="section-link">
+              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone2 }}
             </div>
 
             <a
@@ -225,7 +229,7 @@ a {
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/photo.jpg');
+  content: url('../../resume/photo_square.jpg');
   z-index: 2;
 }
 

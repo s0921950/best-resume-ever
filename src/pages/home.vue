@@ -7,10 +7,18 @@
   <h3 class="title">My resume</h3>
   <div class="previews">
     <div class="preview">
+      <router-link v-bind:to="'/resume/purple'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/resume-purple.png" />
+          <span>Type I</span>
+        </div>
+      </router-link>
+    </div>
+    <div class="preview">
       <router-link v-bind:to="'/resume/material-dark'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-material-dark.png" />
-          <span>Type I</span>
+          <span>Type II</span>
         </div>
       </router-link>
     </div>
@@ -18,7 +26,7 @@
       <router-link v-bind:to="'/resume/left-right'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-left-right.png" />
-          <span>Type II</span>
+          <span>Type III</span>
         </div>
       </router-link>
     </div>
@@ -34,14 +42,6 @@
       <router-link v-bind:to="'/resume/side-bar'">
         <div class="preview-wrapper">
           <img src="../assets/preview/resume-side-bar.png" />
-          <span>Type III</span>
-        </div>
-      </router-link>
-    </div>
-    <div class="preview">
-      <router-link v-bind:to="'/resume/purple'">
-        <div class="preview-wrapper">
-          <img src="../assets/preview/resume-purple.png" />
           <span>Type IV</span>
         </div>
       </router-link>
@@ -79,8 +79,8 @@
       </router-link>
     </div>
   </div>
-  <h3 class="title">books</h3>
-  <div class="previews">
+  <h3 class="title">RWD</h3>
+  <!-- <div class="previews">
     <div class="preview">
       <router-link v-bind:to="'/resume/material-dark'">
         <div class="preview-wrapper">
@@ -89,7 +89,7 @@
         </div>
       </router-link>
     </div>
-  </div>
+  </div> -->
 </div>
 </template>
 
@@ -135,8 +135,8 @@ export default Vue.component('resume', {
 }
 
 .previews {
-  width: 90%;
-  height: 800px;
+  width: 190px;
+  height: 1300px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
@@ -180,7 +180,7 @@ export default Vue.component('resume', {
 @media (min-width:340px){
   .previews {
     width: 190px;
-    height: 800px;
+    height: 1300px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -190,7 +190,7 @@ export default Vue.component('resume', {
 @media (min-width:580px){
   .previews {
     width: 384px;
-    height: 800px;
+    height: 780px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -200,7 +200,7 @@ export default Vue.component('resume', {
 @media (min-width:820px){
   .previews {
     width: 820px;
-    height: 800px;
+    height: 520px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -210,7 +210,7 @@ export default Vue.component('resume', {
 @media (min-width:1060px){
   .previews {
     width: 1060px;
-    height: 800px;
+    height: 260px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
