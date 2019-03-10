@@ -33,6 +33,14 @@
                   <i class="fa fa-circle" aria-hidden="true"></i>
               </div>
               <div class="contact-row">
+                  <a>13076988171</a>
+              </div>
+              <div class="contact-row dots">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+              </div>
+              <div class="contact-row">
                   {{person.contact.street}} <br> {{person.contact.city}}
               </div>
               <div v-if="person.contact.github" class="contact-row dots">
@@ -132,7 +140,7 @@ export default Vue.component(name, getVueOptions(name));
   .left-col {
     width:26%;
     float:left;
-    padding-left:8%;
+    padding-left:5%;
     padding-right:4%;
     .person-image .image-centerer {
       display:flex;
@@ -144,6 +152,7 @@ export default Vue.component(name, getVueOptions(name));
         background:url('../../resume/photo.jpg');
         background-position:center;
         background-size:cover;
+        margin-left:20px;
         height:250px;
         width:100%;
       }
@@ -151,6 +160,7 @@ export default Vue.component(name, getVueOptions(name));
     .contact h3 {
       text-align:center;
       margin-top:20px;
+      margin-left:20px;
     }
     .contact .contact-row {
       text-align:center;

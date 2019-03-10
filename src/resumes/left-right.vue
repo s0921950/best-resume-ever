@@ -33,6 +33,10 @@
           <td><i class="fa fa-phone" aria-hidden="true"></i></td>
         </tr>
         <tr>
+          <td><a :href="contactLinks.phone2">{{person.contact.phone2}}</a></td>
+          <td><i class="fa fa-phone" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
           <td><!-- {{person.contact.street}} <br> --> {{person.contact.city}}</td>
           <td><i class="fa fa-home" aria-hidden="true"></i></td>
         </tr>

@@ -41,6 +41,17 @@
       </div>
     </a>
 
+    <a :href="contactLinks.phone">
+      <div class="item">
+        <div class="icon">
+          <i class="material-icons">phone</i>
+        </div>
+        <div class="text">
+          {{person.contact.phone2}}
+        </div>
+      </div>
+    </a>
+
     <a :href="contactLinks.email">
       <div class="item">
         <div class="icon">
