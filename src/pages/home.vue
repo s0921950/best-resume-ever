@@ -79,7 +79,12 @@
       </router-link>
     </div>
   </div>
-  <h3 class="title">RWD</h3>
+  <div class="section">
+    <i class="fas fa-laptop-code fa-3x"></i>
+    <i class="fas fa-tablet-alt fa-3x"></i>
+    <i class="fas fa-mobile-alt fa-3x"></i>
+    <i class="fas fa-cloud fa-3x"></i>
+    <i class="fas fa-database fa-3x"></i>
   <!-- <div class="previews">
     <div class="preview">
       <router-link v-bind:to="'/resume/material-dark'">
@@ -90,6 +95,7 @@
       </router-link>
     </div>
   </div> -->
+  </div>
 </div>
 </template>
 
@@ -127,11 +133,15 @@ export default Vue.component('resume', {
   margin-bottom: 40px;
 }
 
-.books {
+.section {
   text-align: center;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.fa-3x {
+  width: 60px;
 }
 
 .previews {
