@@ -210,7 +210,7 @@ export default Vue.component('resume', {
 @media (min-width:820px){
   .previews {
     width: 820px;
-    height: 520px;
+    height: 550px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -220,7 +220,7 @@ export default Vue.component('resume', {
 @media (min-width:1060px){
   .previews {
     width: 1060px;
-    height: 260px;
+    height: 270px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
