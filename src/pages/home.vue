@@ -157,7 +157,7 @@ export default Vue.component('resume', {
   float: left;
   margin-left: 1.5%;
   margin-right: 1.5%;
-  margin-bottom: 1.5%;
+  margin-bottom: 5%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   height: 252px;
   overflow: hidden;
