@@ -138,6 +138,7 @@ export default Vue.component('resume', {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 25px;
 }
 
 .fa-3x {
