@@ -79,12 +79,24 @@
       </router-link>
     </div>
   </div>
-  <div class="section">
-    <i class="fas fa-laptop-code fa-3x"></i>
-    <i class="fas fa-tablet-alt fa-3x"></i>
-    <i class="fas fa-mobile-alt fa-3x"></i>
-    <i class="fas fa-cloud fa-3x"></i>
-    <i class="fas fa-database fa-3x"></i>
+  <h3 class="title">Books</h3>
+  <div class="sections">
+    <div class="section">
+      <router-link v-bind:to="'/resume/cool'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/rwd.jpeg" />
+          <span>響應式Web設計</span>
+        </div>
+      </router-link>
+    </div>
+    <div class="section">
+      <router-link v-bind:to="'/resume/cool'">
+        <div class="preview-wrapper">
+          <img src="../assets/preview/nodejs.jpeg" />
+          <span>Node.js實戰</span>
+        </div>
+      </router-link>
+    </div>
   <!-- <div class="previews">
     <div class="preview">
       <router-link v-bind:to="'/resume/material-dark'">
@@ -95,6 +107,13 @@
       </router-link>
     </div>
   </div> -->
+  </div>
+  <div class="icon">
+    <i class="fas fa-laptop-code fa-3x"></i>
+    <i class="fas fa-tablet-alt fa-3x"></i>
+    <i class="fas fa-mobile-alt fa-3x"></i>
+    <i class="fas fa-cloud fa-3x"></i>
+    <i class="fas fa-database fa-3x"></i>
   </div>
 </div>
 </template>
@@ -131,14 +150,6 @@ export default Vue.component('resume', {
   margin: 1.78rem 0 1.424rem 0;
   margin-top: 0px;
   margin-bottom: 40px;
-}
-
-.section {
-  text-align: center;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 25px;
 }
 
 .fa-3x {
@@ -188,10 +199,60 @@ export default Vue.component('resume', {
   transform: translateY(-50%);
 }
 
+.sections {
+  width: 190px;
+  height: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.section {
+  width: 180px;
+  float: left;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 5%;
+  height: 252px;
+  overflow: hidden;
+}
+
+.section img {
+  width: 100%;
+  opacity: 0.5;
+  filter: blur(1px);
+}
+
+.section span {
+  max-width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  top: 50%;
+}
+
+.icon {
+  text-align: center;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
 @media (min-width:340px){
   .previews {
     width: 190px;
     height: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+  .sections {
+    width: 190px;
+    height: 550px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -206,12 +267,26 @@ export default Vue.component('resume', {
     margin-left: auto;
     margin-bottom: 40px;
   }
+  .sections {
+    width: 384px;
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width:820px){
   .previews {
     width: 820px;
     height: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
+  .sections {
+    width: 384px;
+    height: 270px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 40px;
@@ -226,7 +301,13 @@ export default Vue.component('resume', {
     margin-left: auto;
     margin-bottom: 40px;
   }
+  .sections {
+    width: 384px;
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+  }
 }
-
 
 </style>
