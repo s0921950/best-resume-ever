@@ -65,8 +65,8 @@
 
     <a v-if="person.contact.github" :href="contactLinks.github" target="_self">
       <div class="item">
-        <div class="icon">
-          <i class="fa fa-github"></i>
+        <div class="icon" style="text-align:center;">
+          <i class="fab fa-github fa-2x"></i>
         </div>
         <div class="text">
           <span>@{{person.contact.github}}</span>
@@ -207,8 +207,8 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:40px;
-  margin-bottom:20px;
+  margin-top:10px;
+  margin-bottom:10px;
   color:#3f3d3c;
 }
 .c {
@@ -243,7 +243,7 @@ p {
   line-height:1;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
-  font-size:26px;
+  font-size:32px;
 }
 h1, h3, h5, h6 {
   font-weight:400;
