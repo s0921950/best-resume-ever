@@ -27,6 +27,7 @@
     "lint:fix": "eslint --ext .js,.vue src scripts --fix"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "font-awesome": "4.7.0",
     "js-yaml": "3.12.0",

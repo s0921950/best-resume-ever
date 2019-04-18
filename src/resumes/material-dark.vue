@@ -1,5 +1,8 @@
 <template>
 <div class="resume">
+  <div id="resume-header">
+    <span v-if="person.contact.test" id="website"><a :href='contactLinks.website'><i class="fa fa-home" aria-hidden="true"></i> </a></span>
+  </div>
   <div class="leftCol m_box">
     <div class="shadow"></div>
     <div class="heading" id="myselfpic">

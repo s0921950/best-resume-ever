@@ -1,7 +1,8 @@
-import yaml from 'js-yaml';
-import {
+// import yaml from 'js-yaml';
+import axios from 'axios';
+/*import {
     PERSON
-} from '../../resume/data.yml';
+} from '../../resume/data.yml';*/
 import {
     terms
 } from '../terms';
@@ -12,9 +13,13 @@ function getVueOptions (name) {
         name: name,
         data () {
             return {
-                person: yaml.load(PERSON),
+                // person: yaml.load(PERSON),
                 terms: terms,
+                person: null,
             };
+        },
+        mounted () {
+            axios.get('https://yuhuatung-api.herokuapp.com/data').then(response => (this.person = response.data.data[0]));
         },
         computed: {
             lang () {
