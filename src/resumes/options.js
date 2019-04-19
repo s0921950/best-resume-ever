@@ -15,7 +15,26 @@ function getVueOptions (name) {
             return {
                 // person: yaml.load(PERSON),
                 terms: terms,
-                person: null,
+                person: {
+                    'name': {
+                        'first': '',
+                        'middle': '',
+                        'last': ''
+                    },
+                    'contact': {
+                        'email': '',
+                        'phone': '',
+                        'phone2': '',
+                        'street': '',
+                        'city': '',
+                        'website': '',
+                        'github': ''
+                    },
+                    'birth': {
+                        'year': '',
+                        'location': ''
+                    },
+                },
             };
         },
         mounted () {
@@ -24,17 +43,19 @@ function getVueOptions (name) {
         computed: {
             lang () {
                 const defaultLang = this.terms.en;
-                const useLang = this.terms[this.person.lang];
+                if(this.person.lang) {
+                    const useLang = this.terms[this.person.lang];
 
-                // overwrite non-set fields with default lang
-                Object.keys(defaultLang)
-                    .filter(k => !useLang[k])
-                    .forEach(k => {
-                        console.log(k);
-                        useLang[k] = defaultLang[k];
-                    });
-
-                return useLang;
+                    // overwrite non-set fields with default lang
+                    Object.keys(defaultLang)
+                        .filter(k => !useLang[k])
+                        .forEach(k => {
+                            console.log(k);
+                            useLang[k] = defaultLang[k];
+                        });
+                    return useLang;
+                }
+                return defaultLang;
             },
 
             contactLinks() {
